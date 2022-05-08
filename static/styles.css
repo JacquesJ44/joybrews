@@ -1,0 +1,89 @@
+/* Elements */
+
+iframe{
+    max-width: 100%;
+}
+
+/* Classes */
+
+.navbar{
+    background-color: rgba(255, 255, 255, 1);
+    height: 100px;
+}
+
+.nav-item{
+    display: inline;
+    padding-right: 15px;
+}
+
+.nav-link{
+    font-family: "cabin_sketchregular", "New Times Roman", sans-serif;
+    font-size: 14px;  
+}
+
+.row > #foot{
+    padding: 5px;
+    text-align: center;
+}
+
+.navbar-brand{
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+.navbar-brand img{
+    height: 90px;
+}
+ .navbar-nav{
+     margin-right: 10px;
+ }
+
+/* ID's */
+
+#aboutus{
+    font-family: "cabin_sketchregular", "New Times Roman", sans-serif;
+}
+
+#site-footer{
+    background-color: #3a525f;
+    color: #fec155;
+}
+
+#site-footer h3{
+    font-family: "cabin_sketchregular", "New Times Roman", sans-serif;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'gistesyregular';
+    src: url(/static/fonts/webfontkit-20220321-042007/gistesy-webfont.woff2) format('woff2'),
+    url(/static/fonts/webfontkit-20220321-042007/gistesy-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cabin_sketchregular';
+    src: url(/static/fonts/webfontkit-20220321-042007/cabinsketch-regular-webfont.woff2) format('woff2'),
+         url(/static/fonts/webfontkit-20220321-042007/cabinsketch-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cabinsketchbold';
+    src: url(/static/fonts/webfontkit-20220321-042007/cabinsketch-bold-webfont.woff2) format('woff2'),
+         url(/static/fonts/webfontkit-20220321-042007/cabinsketch-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

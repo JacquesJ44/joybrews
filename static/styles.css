@@ -4,6 +4,14 @@ iframe{
     max-width: 100%;
 }
 
+h1{
+    color: #444444;
+}
+
+p{
+  font-family: "cabin_sketchregular", "New Times Roman", sans-serif;
+  text-align: justify;
+}
 /* Classes */
 
 .navbar{
@@ -18,7 +26,7 @@ iframe{
 
 .nav-link{
     font-family: "cabin_sketchregular", "New Times Roman", sans-serif;
-    font-size: 14px;  
+    font-size: 14px;
 }
 
 .row > #foot{
@@ -31,27 +39,75 @@ iframe{
     left: 50%;
     position: absolute;
 }
+
 .navbar-brand img{
     height: 90px;
 }
- .navbar-nav{
+
+.navbar-nav{
      margin-right: 10px;
- }
+}
+
+.merch{
+    padding: 5px;
+}
+
+.btn-light, .btn-light:hover, .btn-light:active, .btn-light:visited{
+    background-color: #3a525f !important;
+    color: #c7b976 !important;
+}
+
+.merch h3{
+    font-family: "cabin_sketchregular", "New Times Roman", sans-serif;
+    padding: 5px;
+}
+
+.menusection{
+    margin: 10px;
+}
+
+.merch{
+    margin: 20px 20px;
+}
+
+.aboutus{
+    margin: 20px;
+    margin-top: 50px;
+}
 
 /* ID's */
+#mainpic{
+    margin-top: 100px;
+}
 
-#aboutus{
-    font-family: "cabin_sketchregular", "New Times Roman", sans-serif;
+
+#aboutus p{
+  font-family: "cabin_sketchregular", "New Times Roman", sans-serif;
+  text-align: justify;
 }
 
 #site-footer{
     background-color: #3a525f;
-    color: #fec155;
+    color: #c7b976;
 }
 
 #site-footer h3{
     font-family: "cabin_sketchregular", "New Times Roman", sans-serif;
 }
+
+#site-footer p{
+  text-align: center;
+}
+
+#socialmedia{
+    display: flex;
+    width: 50px;
+    margin-left: 35px;
+    padding: 2px;
+    justify-content: space-around;
+}
+
+
 
 /* FONTS */
 

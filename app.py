@@ -6,7 +6,14 @@ from cs50 import SQL
 # To configure email server parameters
 from decouple import config
 from datetime import datetime
+import os
 
+project_root = os.path.dirname(os.path.realpath('__file__'))
+template_path = os.path.join(project_root, 'app/templates')
+static_path = os.path.join(project_root, 'app/static')
+app = Flask(__name__, template_folder=template_path, static_folder=static_path)
+
+Application = app
 
 # Configure SQLite database and Flask application
 db = SQL("sqlite:///jb.db")
@@ -16,7 +23,7 @@ app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 # Configure SQLAlchemy for Flask
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/jacquesdutoit/Downloads/Joybrews/blog.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/jacquesdutoit/Desktop/joybrews/joybrews/blog.db'
 dbalc = SQLAlchemy(app)
 
 # Configure a database model for the blogposts to be saved into
@@ -61,7 +68,7 @@ def getform():
         timestamp = timestamp[0]["datetime()"]
 
         # Mail the contact form information
-        msg = Message('Enquiry', sender='jjdttesting@gmail.com', recipients=['jmventer.befocused@gmail.com'], reply_to=email)
+        msg = Message('Enquiry', sender='jjdttesting@gmail.com', recipients=['jjdttesting@gmail.com'], reply_to=email)
         msg.body = ('From: ' + name + ' ' + surname + '\n\n' + query)
         mail.send(msg)
 

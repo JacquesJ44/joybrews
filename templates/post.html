@@ -41,14 +41,13 @@
         <a href="/coffeemoments" style="text-decoration: none; color: black; margin-left: 50%;">go back</a>
 
         <div class="row">
-            <div class="leftcolumn">
-                <div class="card">
-                  <h3 style="font-family: 'cabinsketchbold', 'Times New Roman', Times, serif;">{{ post.title }}</h3>
-                  <h5>{{ post.subtitle }}</h5>
-                  <h6>Posted by {{ post.author }} on {{ post.date_posted.strftime('%B %d, %Y') }}</h6>
-                  <p>{{ post.content | safe }}</p>
-                </div>
-            </div> 
+            <div class="card">
+              <h3 style="font-family: 'cabinsketchbold', 'Times New Roman', Times, serif;">{{ post.title }}</h3>
+              <h5>{{ post.subtitle }}</h5>
+              <h6>Posted by {{ post.author }} on {{ post.date_posted.strftime('%B %d, %Y') }}</h6>
+              <p style="text-align: justify">{{ post.content | safe }}</p>
+            </div>  
+        </div>
     </body>
 </html>   
 

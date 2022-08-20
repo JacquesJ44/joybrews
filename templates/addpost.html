@@ -14,10 +14,10 @@
 
     <title>JoyBrews Add Post</title>
 </head>
-
 <body>
     <div>
         <h3>ADD YOUR POST</h3>
+        <a href="https://www.semrush.com/blog/html-tags-list/" target="_blank">Cheat Sheet</a>
         <form action="/addpost", method="post">
             <div class="mb-3 mt-3">
                 <input class="form-control" type="text" id="title" placeholder="Title" name="title">
@@ -31,7 +31,8 @@
             <div class="mb-3 mt-3">
                 <textarea class="form-control" rows="19" id="content" placeholder="Write your blog" name="content"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+            <button type="submit" class="btn btn-primary" name="submit1" value="commit">Submit</button>
+            <button type="submit" class="btn btn-secondary" name="submit1" value="watch">Preview</button>
         </form>
     </div>
 </body>

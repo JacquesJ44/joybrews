@@ -99,17 +99,22 @@ def addpost():
     
     # If request method is POST then save the blogpost to the database and display on the site
     if request.method == "POST":
-        title = request.form['title']
-        subtitle = request.form['subtitle']
-        author = request.form['author']
-        content = request.form['content']
+        if request.form.get('submit1', None) == 'watch':
+            content = request.form['content']
+            return render_template("preview.html", content=content)
 
-        post = Blogpost(title=title, subtitle=subtitle, author=author, content=content, date_posted=datetime.now())
+        elif request.form.get('submit1', None) == 'commit':
+            title = request.form['title']
+            subtitle = request.form['subtitle']
+            author = request.form['author']
+            content = request.form['content']
 
-        dbalc.session.add(post)
-        dbalc.session.commit()
+            post = Blogpost(title=title, subtitle=subtitle, author=author, content=content, date_posted=datetime.now())
 
-        return redirect(url_for('coffeemoments'))
+            dbalc.session.add(post)
+            dbalc.session.commit()
+
+            return redirect(url_for('coffeemoments'))
 
 if __name__ == "__main__":
     app.run(debug=True)
